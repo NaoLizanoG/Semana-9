@@ -17,6 +17,7 @@ printf ("\n");
 int A[2][filas][columnas];
 
 
+printf("La matriz original es:\n");
 for (int j = 0; j < filas; j++)
     {
         for (int k = 0; k < columnas; k++)
@@ -26,17 +27,18 @@ for (int j = 0; j < filas; j++)
             if (k+1==columnas)
             {
              A[1][j][k]= rand()%101;
-            printf(" %d\n", A[1][j][k]);
+            printf("  %d\n", A[1][j][k]);
             }
             else{
                 A[1][j][k]= rand()%101;
-            printf(" %d", A[1][j][k]);
+            printf("  %d", A[1][j][k]);
             
             }
         }
     }
 
     printf ("\n");
+    printf("La matriz transpuesta es:\n");
 
     for (int j = 0; j < columnas; j++)
     {
@@ -46,11 +48,11 @@ for (int j = 0; j < filas; j++)
             if (k+1==filas)
             {
              A[2][j][k]= A[1][k][j];
-            printf(" %d\n", A[2][j][k]);
+            printf("  %d\n", A[2][j][k]);
             }
             else{
             A[2][j][k]= A[1][k][j];
-            printf(" %d", A[2][j][k]);
+            printf("  %d", A[2][j][k]);
             
             }
         }
