@@ -36,6 +36,27 @@ for (int j = 0; j < filas; j++)
         }
     }
 
+    printf ("\n");
+
+    for (int j = 0; j < columnas; j++)
+    {
+        for (int k = 0; k < filas; k++)
+        {
+            //If para formar la matriz
+            if (k+1==filas)
+            {
+             A[2][j][k]= A[1][k][j];
+            printf(" %d\n", A[2][j][k]);
+            }
+            else{
+            A[2][j][k]= A[1][k][j];
+            printf(" %d", A[2][j][k]);
+            
+            }
+        }
+    }
+    
+
 
 
 return 0;
